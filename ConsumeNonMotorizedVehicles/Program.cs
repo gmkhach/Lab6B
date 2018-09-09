@@ -33,8 +33,6 @@ namespace ConsumeNonMotorizedVehicles
             }
             catch (Exception e)
             { throw e; }
-
-
         }
     }
 }
