@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NonMotorizedVehicles;
-using Stuctures;
+using Structures;
 
 namespace TestMotorizedVehicle
 {
@@ -15,24 +15,24 @@ namespace TestMotorizedVehicle
             bool isMoving = coupe.Moving();
             Assert.AreEqual(false, isMoving);
 
-            bool hasStarted = coupe.Moving(true);
+            bool hasStarted = coupe.Driving(true);
             Assert.IsTrue(hasStarted);
 
-            bool hasStopped = coupe.Moving(false);
+            bool hasStopped = coupe.Driving(false);
             Assert.IsFalse(hasStopped);        
         }
 
-        //[TestMethod]
+        [TestMethod]
         public void TestIsDrivingStructure()
         {
             Tricycle trike = new Tricycle();
             bool isMoving = trike.Moving();
             Assert.AreEqual(false, isMoving);
 
-            bool hasStarted = trike.Moving(true);
+            bool hasStarted = trike.Driving(true);
             Assert.IsTrue(hasStarted);
 
-            bool hasStopped = trike.Moving(false);
+            bool hasStopped = trike.Driving(false);
             Assert.IsFalse(hasStopped);
         }
     }
