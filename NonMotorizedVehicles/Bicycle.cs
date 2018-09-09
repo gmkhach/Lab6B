@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NonMotorizedVehicles
 {
-    public class Coupe: BaseNonMotorizedVehicle
+    public class Bicycle: BaseNonMotorizedVehicle
     {
        
     }

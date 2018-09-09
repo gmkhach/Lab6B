@@ -2,12 +2,10 @@
 
 namespace Structures
 {
-    public struct Tricycle : INonMotorizedVehicle
+    public struct Tricycle
     {
-        TerrainType TerrainType { get; set; }
+        public TerrainType TerrainType { get; set; }
         public int NoOfTires { get; set; }
         public string Brakes { get; set; }
-        
-
     }
 }

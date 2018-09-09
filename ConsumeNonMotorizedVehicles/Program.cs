@@ -11,25 +11,25 @@ namespace ConsumeNonMotorizedVehicles
         {
             try
             {
-                    Bicycle bike = new Bicycle
-                    {
-                        TerrainType = "Beach",
-                        NoOfTires = 2
-                    };
+                Bicycle bike = new Bicycle
+                {
+                    TerrainType = TerrainType.Beach,
+                    NoOfWheels = 2
+                };
 
-                    Tricycle trike = new Tricycle
-                    {
-                        TerrainType = "City",
-                        NoOfTires = 3
-                    }
+                Tricycle trike = new Tricycle
+                {
+                    TerrainType = TerrainType.City,
+                    NoOfTires = 3
+                };
 
-                    Bicycle bikeTwin = bike;
-                    bikeTwin.Terraintype = TerrainType.AllTerrain;
-                    Console.WriteLine($"bike has terrain type {bike.TerrainType}");
+                Bicycle bikeTwin = bike;
+                bikeTwin.TerrainType = TerrainType.AllTerrain;
+                Console.WriteLine($"bike has terrain type {bike.TerrainType}");
 
-                    Tricycle trikeTwin = trike;
-                    autoTwin.Terraintype = TerrainType.Mountain;
-                    Console.WriteLine($"trike has terrain type {trike.TerrainType}");
+                Tricycle trikeTwin = trike;
+                trikeTwin.TerrainType = TerrainType.Mountain;
+                Console.WriteLine($"trike has terrain type {trike.TerrainType}");
             }
             catch (Exception e)
             { throw e; }
